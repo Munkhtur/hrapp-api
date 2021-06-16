@@ -1,0 +1,10 @@
+POST http://127.0.0.1:8000/api/events/
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIn0.wNVf8EXDsI7ZqlX1Cx_a9yb829E4KQTGDeTwrv5zSxM
+
+
+{
+    "content": "nefdsjkkljhl;kjlkkajft event",
+    "date": "2021-06-13",
+    "type": "success"
+}
