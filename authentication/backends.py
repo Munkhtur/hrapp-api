@@ -4,12 +4,23 @@ from django.conf import settings
 # from django.contrib.auth.models import User
 from django.contrib.auth.backends import ModelBackend
 from .models import User
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 class JWTAuthentication(authentication.BaseAuthentication):
 
     def authenticate(self, request):
-        print(request, "fdkjhjlkjhlh")
+        print(request.get_full_path(), "fdkjhjlkjhlh")
+
+        if request.get_full_path() == '/api/password_reset/':
+            # email = request.data.get('email', '')
+            # print(email)
+            # user = User.objects.get(email=email)
+            # return user
+            pass
+
         auth_data = authentication.get_authorization_header(request)
         print(auth_data, 'auth_data')
         if not auth_data:

@@ -1,0 +1,12 @@
+POST http://127.0.0.1:8000/api/attendance/
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImFkbWluQG1haWwuY29tIiwicGFzc3dvcmQiOiJhZG1pbiIsImV4cCI6MTYyNDUzMjQ0OH0.MYaXkJqL5QLw1H87uG7YOYykpy0A-5ZUmr6V8gdNCrQ
+
+
+{
+  "clockin": "2022-06-25",
+  "clockout": "2021-06-22",
+  "workhours": 0,
+  "breakhours": 0,
+  "status": "on break"
+}

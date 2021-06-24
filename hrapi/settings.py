@@ -41,8 +41,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'authentication',
     'events',
+    'attendance',
     'drf_yasg',
     'corsheaders',
+    'django_rest_passwordreset',
 ]
 
 SWAGGER_SETTINGS = {
@@ -162,3 +164,5 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
 
 ]
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
